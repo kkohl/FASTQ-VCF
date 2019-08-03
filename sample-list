@@ -1,0 +1,24 @@
+# List of samples to be processed
+# Samples taken from 1000 Genomes Project - Phase 1
+$ Phase 1 chosen for whole genome sequencing
+
+# Sample filters
+##Platform - Illumina (low coverage & exome)
+## Existing varient set for: Integrated	ChrY; SNPS; ChrY Dels; ChrMT SNPS
+## Passed 1000GP QC for whole genome & exome (final phase)
+## One sample from each population 'PUR', 'JPT', 'CLM', 'MXL', 'CEU', 'CHS', 'GBR', 'LWK', 'YRI', 'ASW', 'FIN', 'TSI', 'CHB'
+## Preferably with high "Aligned Non Duplicated Coverage"
+
+PUR: HG00553
+JPT: NA18943
+CLM: HG01112
+MXL: NA19661
+CEU: NA07048
+CHS: HG00472
+GBR: HG00140
+LWK: NA19346
+YRI: NA18504
+ASW: NA19920
+FIN: HG00335
+TSI: NA20588
+CHB: NA18623
