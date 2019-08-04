@@ -5,7 +5,8 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --time=48:00:00
 #SBATCH --mem=8GB
-#SBATCH --job-name=kwk_fasta_dump #SBATCH --mail-type=FAIL
+#SBATCH --job-name=kwk_fastq_dump 
+#SBATCH --mail-type=FAIL
 #SBATCH --mail-user=kwk263@nyu.edu
 #SBATCH --array=1-13
 
