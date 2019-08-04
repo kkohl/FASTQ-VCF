@@ -17,6 +17,7 @@ mkdir /scratch/kwk263/var_calling/FASTQs/
 cd /scratch/kwk263/var_calling/FASTQs/
 
 
+
 # read sample table
 table=/home/kwk263/fast-vars/sample_ftp_table.txt
 line="$(head -n ${SLURM_ARRAY_TASK_ID} "${table}" | tail -n 1)"
