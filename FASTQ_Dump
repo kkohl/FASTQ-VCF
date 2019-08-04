@@ -18,7 +18,7 @@ cd /scratch/kwk263/var_calling/FASTQs/
 
 
 # read sample table
-table=/scratch/kwk263/fast-vars/sample_ftp_table.txt
+table=/home/kwk263/fast-vars/sample_ftp_table.txt
 line="$(head -n ${SLURM_ARRAY_TASK_ID} "${table}" | tail -n 1)"
 sample="$(printf "%s" "${line}" | cut -f1)"
 pair1="$(printf "%s" "${line}" | cut -f2)"
