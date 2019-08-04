@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+#SBATCH --nodes=1
+#SBATCH --tasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=48:00:00
+#SBATCH --mem=8GB
+#SBATCH --job-name=kwk_fasta_dump #SBATCH --mail-type=FAIL
+#SBATCH --mail-user=kwk263@nyu.edu
+
+
+## go to correct directory
+mkdir /scratch/kwk263/var_calling/FASTQs/
+cd /scratch/kwk263/var_calling/FASTQs
+
+
+
+
+# use wget
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR107/SRR107087/SRR107087_1.fastq.gz > HG01066_1
