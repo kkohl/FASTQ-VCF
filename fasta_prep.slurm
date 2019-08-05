@@ -18,7 +18,7 @@ module load bwa/intel/0.7.15
 cd /scratch/kwk263/var_calling/ref
 
 # unzip references FASTA
-gunzip -c Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
+gunzip -c Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz > Homo_sapiens.GRCh38.dna.primary_assembly.fa
 
 #N Normalize FASTA file
 java -jar "${PICARD_JAR}" NormalizeFasta \
