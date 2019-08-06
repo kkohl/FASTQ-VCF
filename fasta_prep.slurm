@@ -30,6 +30,4 @@ java -jar "${PICARD_JAR}" NormalizeFasta \
 bwa index -a bwtsw Homo_sapiens.GRCh38.dna.primary_assembly.normalized.fa
 samtools faidx Homo_sapiens.GRCh38.dna.primary_assembly.normalized.fa
 
-java -jar "${PICARD_JAR}" CreateSequenceDictionary \
-    REFERENCE=Homo_sapiens.GRCh38.dna.primary_assembly.normalized.fa \ 
-    OUTPUT=Homo_sapiens.GRCh38.dna.primary_assembly.normalized.dict
+java -jar ${PICARD_JAR} CreateSequenceDictionary \REFERENCE=Homo_sapiens.GRCh38.dna.primary_assembly.normalized.fa \OUTPUT=Homo_sapiens.GRCh38.dna.primary_assembly.normalized.dict
