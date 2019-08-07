@@ -28,7 +28,7 @@ mkdir /scratch/kwk263/var_calling/BAMs/"${sample}"/
 cd /scratch/kwk263/var_calling/BAMs/"${sample}"/
 
 # create file path variable
-path=/scratch/kwk263/var_calling/FASTQs/"${sample}"
+path=/scratch/kwk263/var_calling/FASTQs/"${sample}"/
 
 # Align each sample 
 bwa mem -M -t "${SLURM_CPUS_PER_TASK}" "${ref}" "${path}${pair1}" "${path}${pair2}" > "${sample}".bam
