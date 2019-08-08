@@ -23,4 +23,4 @@ pair2="$(printf "%s" "${line}" | cut -f3)"
 
 cd /scratch/kwk263/var_calling/FASTQs/"${sample}"/
 
-java -jar "${TRIMMOMATIC_JAR}" PE -phred33 "${pair1}" "${pair2}" "{sample}"_forward_paired.fq.gz "{sample}"_forward_unpaired.fq.gz "{sample}"_reverse_paired.fq.gz "{sample}"_reverse_unpaired.fq.gz ILLUMINACLIP:/scratch/courses/BI7653/hw3.2018/concatenated_adapters.fa:2:30:10 MINLEN:75
+java -jar "${TRIMMOMATIC_JAR}" PE -phred33 "${pair1}" "${pair2}" "${sample}"_forward_paired.fq.gz "${sample}"_forward_unpaired.fq.gz "${sample}"_reverse_paired.fq.gz "${sample}"_reverse_unpaired.fq.gz ILLUMINACLIP:/scratch/courses/BI7653/hw3.2018/concatenated_adapters.fa:2:30:10 MINLEN:75
